@@ -5,7 +5,7 @@ import './App.css';
 import { StateProvider } from './Store.js';
 
 function App() {
-  
+  // TODO: client side stickiness
   return (
     <StateProvider>
       <div className="App">

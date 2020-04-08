@@ -17,25 +17,33 @@ function ConfigureBox() {
         state[boxOpened].N = e.target.value;
     }
 
+    // TODO: Clicking configure button in a different box should open config for that box instead of closing the one currently open
     // TODO: Display errors on form instead of in alert boxes. 
     // TODO: More validation
     const isInputValid = () => {
         if (NRef.current.value === '') {
             alert('Please enter a valid value for N');
+            return false;
         }
         if (XRef.current.value === '') {
             alert('Please enter a valid value for X');
+            return false;
         }
         if (MRef.current.value === '') {
             alert('Please enter a valid value for M');
+            return false;
         }
         if (WRef.current.value === '') {
             alert('Please enter a valid value for W');
+            return false;
         }
 
         if (parseInt(NRef.current.value) > parseInt(MRef.current.value)) {
-            alert('N must be less than M')
+            alert('N must be less than M');
+            return false;
         }
+
+        return true;
     }
 
     const onOKButtonClick = () => {
@@ -77,7 +85,7 @@ function ConfigureBox() {
                 </div>
                 <div>
                     <div className='input-label'>D = </div>
-                    <select id="cars" onChange={onChange} ref={DRef}> 
+                    <select id="direction" onChange={onChange} ref={DRef}> 
                         <option value="LTR-UP">LTR-UP</option>
                         <option value="RTL-UP">RTL-UP</option>
                     </select>

@@ -18,6 +18,8 @@ function TableContainer(props) {
     dispatch({type: 'UPDATE_STATE', payload: state})
   }
 
+  // TODO: Prevent objects from resizing depending on table size
+
   return (
         <div className = {className} style={{width:width}}> 
             <Table tableColor={tableColor}/>

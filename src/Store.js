@@ -22,7 +22,7 @@ const initialState = {
         W: 40,
         D: 'RTL-UP',
     },
-    configureBoxDisplayed: true,
+    configureBoxDisplayed: false,
     configureBoxOpened: 'red',
 };
 const store = createContext(initialState);

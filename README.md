@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Notes
+I used create react app to set up a basic project with the necessary packages.  
+
+There are a few TODOs in the comments.  In addition to those, unit tests need to be completed, which could involve restructuting some of the code to make testing easier.
+
+Should track issues in github
 
 ## Available Scripts
 

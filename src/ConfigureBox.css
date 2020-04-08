@@ -1,0 +1,32 @@
+.configure-box {
+    grid-area: configure-box;
+    background-color: lightgray;
+    text-align: left;
+    padding: 10px;
+    margin-left: 5px;
+    width: 25%;
+}
+
+input  {
+    width: 75px;
+}
+
+input, .input-label {
+    display: inline;
+}
+
+.red-table-header, .green-table-header, .blue-table-header {
+    font-weight: bold;
+}
+
+.red-table-header {
+    color: red;
+}
+
+.green-table-header {
+    color: green;
+}
+
+.blue-table-header {
+    color: blue;
+}

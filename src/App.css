@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-areas: 'table-section'
+                       'configure-box';
+  min-width: 510px;
+}
+
+.table-section {
+  display: flex;
+  grid-area: table-section;
+  grid-template-areas: 'red-table green-table blue-table';
+  width: 100%;
+}
+
+@media (max-width: 1100px) {
+  .blue-table {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .table-section {
+    display: block;
+    grid-template-areas: 'red-table' 
+                         'green-table';
+  }
+  .blue-table {
+    display: none;
+  }
+}

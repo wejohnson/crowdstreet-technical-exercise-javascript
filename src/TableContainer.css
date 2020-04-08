@@ -1,0 +1,34 @@
+.table-container {
+    display: grid;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+    grid-template-areas: 'table-area table-area table-area table-area table-area table-area'
+                         'table-area table-area table-area table-area table-area table-area'
+                         'table-area table-area table-area table-area table-area table-area'
+                         'table-area table-area table-area table-area table-area table-area'
+                         'configure-button . . . . percent-display';
+}
+
+.red-table {
+    border-color: red;
+    grid-area: red-table;
+}
+
+.green-table {
+    border-color: green;
+    grid-area: green-table;
+}
+
+.blue-table {
+    border-color: blue;
+    grid-area: blue-table;
+}
+
+.configure-button {
+    grid-area: configure-button;
+}
+
+.percent-display {
+    grid-area: percent-display;
+}

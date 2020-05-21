@@ -22,8 +22,7 @@ const initialState = {
         W: 40,
         D: 'RTL-UP',
     },
-    configureBoxDisplayed: false,
-    configureBoxOpened: 'red',
+    configureBoxOpened: 'none',
 };
 const store = createContext(initialState);
 const { Provider } = store;

@@ -13,8 +13,13 @@ function TableContainer(props) {
   let width = tableSettings.W + '%';
 
   const toggleConfigureBox = () => {
-    state.configureBoxDisplayed = !state.configureBoxDisplayed;
-    state.configureBoxOpened = tableColor;
+
+    if (tableColor !== state.configureBoxOpened) {
+      state.configureBoxOpened = tableColor;
+    } else {
+      state.configureBoxOpened = 'none'
+    }
+    
     dispatch({type: 'UPDATE_STATE', payload: state})
   }
 
